@@ -1,15 +1,13 @@
 
 import ipaddress
 from ping_one import ping1
-from multiprocessing.pool import ThreadPool
 from multiprocessing import Pool as ProcessPool
-from multiprocessing import freeze_support
 
 
 def multi_ping(ipadd):
     l1 = []
     db = {}
-    pool = ThreadPool(processes=150)
+    pool = ProcessPool(processes=150)
 
     ipaddr = ipaddress.ip_network(ipadd)
     for ip in ipaddr:
@@ -39,11 +37,3 @@ if __name__ == '__main__':
 
     file = open(name, 'rb')
     print(pickle.load(file))
-
-
-
-
-
-
-
-
