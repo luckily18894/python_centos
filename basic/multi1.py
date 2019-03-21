@@ -1,8 +1,7 @@
 
 import ipaddress
-from ping_one import ping1
+from basic.ping_one import ping1
 from multiprocessing import Pool as ProcessPool
-from multiprocessing import freeze_support
 
 
 def multi_ping(ipadd):

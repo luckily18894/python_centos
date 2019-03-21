@@ -1,8 +1,6 @@
-import paramiko
 import logging
 logging.getLogger("kamene.runtime").setLevel(logging.ERROR)  # 关闭不必要的报错
-from kamene.all import *
-from ping_one import ping1
+from basic.ping_one import ping1
 from paramiko_ssh import py_ssh
 
 

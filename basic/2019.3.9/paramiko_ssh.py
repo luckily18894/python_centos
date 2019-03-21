@@ -21,6 +21,6 @@ def py_ssh(ip, username, password, port=22, cmd='ls'):
 
 
 if __name__ == '__main__':
-    print(py_ssh('192.168.241.128', 'root', 'luCKi1y18894'))
-    print(py_ssh('192.168.241.128', 'root', 'luCKi1y18894', cmd='pwd'))
+    print(py_ssh('192.168.1.104', 'root', 'luCKi1y18894'))
+    print(py_ssh('192.168.1.104', 'root', 'luCKi1y18894', cmd='pwd'))
 

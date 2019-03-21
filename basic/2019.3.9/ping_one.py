@@ -12,13 +12,16 @@ from kamene.all import *
 def ping1(ipadd):
     ping_pkt = IP(dst=ipadd) / ICMP()
     ping_result = sr1(ping_pkt, timeout=2, verbose=False)
-    print(ping_result)
+    # print(ping_result)
     if ping_result:
-        print(ipadd, '通')
+        # print(ipadd, '通')
+        r = '1'
     else:
-        print(ipadd, '不通')
+        # print(ipadd, '不通')
+        r = '0'
+    return r
 
 
 if __name__ == '__main__':
-    ping1('114.114.114.114')
+    print(ping1('192.168.1.104'))
 

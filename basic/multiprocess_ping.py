@@ -1,6 +1,6 @@
 
 import ipaddress
-from ping_one import ping1
+from basic.ping_one import ping1
 from multiprocessing import Pool as ProcessPool
 
 
